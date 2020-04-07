@@ -197,8 +197,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420030}
-  - component: {fileID: 519420029}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,36 +204,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &519420029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f661d00999528d44aaa8407609d7477, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stream: {fileID: 627500225151185567, guid: 8443b6c18c9778b49b700f0c6ac3d9e2, type: 3}
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea4d8a34a1983e499b6ff6cecebbe43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 666360181}
-  mic: {fileID: 2874285910114465264, guid: d54d34d32a54d0f4aa02bd3c88bc93aa, type: 3}
-  Voicerec: {fileID: 9054529080844820222, guid: 8443b6c18c9778b49b700f0c6ac3d9e2,
-    type: 3}
-  mod: {fileID: 519420029}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -370,6 +338,181 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519650856}
   m_CullTransparentMesh: 0
+--- !u!1 &589976923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589976926}
+  - component: {fileID: 589976925}
+  - component: {fileID: 589976924}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &589976924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589976923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f661d00999528d44aaa8407609d7477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stream: {fileID: 627500225151185567, guid: 8443b6c18c9778b49b700f0c6ac3d9e2, type: 3}
+  lokaler: []
+  rektor:
+  - rektor
+  - rejser
+  - actor
+  studieadmin:
+  - studieadministration
+  - studieadministrationen
+  vrlab:
+  - vr-lab
+  - vr lab
+  - vr lap
+  - vi er lab
+  - vr
+  - VR Lab
+  - DR app
+  - VR
+  innolab:
+  - innolab
+  - inno lab
+  tiergang:
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  lokaletiergang:
+  - lokale 11
+  - lokale 12
+  - lokale 13
+  - lokale 14
+  - lokale 15
+  - lokale 16
+  - lokale 17
+  - lokale 18
+  tyvergang:
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  tredvegang:
+  - 31
+  - 32
+  foretilfemgang:
+  - 43
+  - 44
+  - 45
+  sekstilfalvtreds:
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  halvtredsgang:
+  - 51
+  - 52
+  - 53
+  - 54
+  tredsgang:
+  - 60
+  - 61
+  - 62
+  - 63
+  proces:
+  - proces
+  - process
+  - prosa
+  - protest
+  - 74
+  teori:
+  - teori
+  - design
+  - 73
+  biokemi:
+  - biokemi
+  - kemi
+  - 72
+  fysik:
+  - fysik
+  - 71
+  printer:
+  - print
+  - printe
+  - printer
+  - printeren
+  - printere
+  - printerne
+  bibliotek:
+  - bibliotek
+  - biblioteket
+  teknologi:
+  - teknologi
+  byg:
+  - byg
+  - Byg
+  - by
+  musik:
+  - musik
+  kantine:
+  - syd
+  - kantine
+  - sydsal
+  - syd sal
+  - kantinen
+  nordsal:
+  - nord
+  - nordsal
+  - nord sal
+  - nordsalen
+--- !u!114 &589976925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589976923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea4d8a34a1983e499b6ff6cecebbe43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 666360181}
+  mic: {fileID: 2874285910114465264, guid: d54d34d32a54d0f4aa02bd3c88bc93aa, type: 3}
+  Voicerec: {fileID: 9054529080844820222, guid: 8443b6c18c9778b49b700f0c6ac3d9e2,
+    type: 3}
+  mod: {fileID: 589976924}
+--- !u!4 &589976926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589976923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 346.7723, y: 282.29242, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666360181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5613806286313635770, guid: 9f99dda468f60174ab5177e0215a9209,
@@ -685,7 +828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 519420030}
+      objectReference: {fileID: 589976925}
     - target: {fileID: 5613806286313635768, guid: 9f99dda468f60174ab5177e0215a9209,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
