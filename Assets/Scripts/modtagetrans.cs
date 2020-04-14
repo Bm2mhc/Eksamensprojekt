@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using GoogleCloudStreamingSpeechToText;
 
 public class modtagetrans : MonoBehaviour
@@ -38,38 +39,152 @@ public class modtagetrans : MonoBehaviour
         Debug.Log(transcript);
         if (System.Array.IndexOf(rektor, transcript) != -1)
         {
+            PlayerPrefs.SetString("lokale", "Rektor");
             Debug.Log("Yep " + transcript);
+            Debug.Log(PlayerPrefs.GetString("lokale"));
+            SceneManager.LoadScene("roadmap");
+           
 
-        } else if (transcript == "lokale 11"){
-            Debug.Log("ens");
-            System.Array.ForEach(lokaletiergang, Debug.Log);
         }
         else if (System.Array.IndexOf(studieadmin, transcript) != -1)
         {
+            PlayerPrefs.SetString("lokale", "Studieadministration");
             Debug.Log("Yep " + transcript);
-          
+            SceneManager.LoadScene("roadmap");
+
 
         }
         else if (System.Array.IndexOf(vrlab, transcript) != -1)
         {
+            PlayerPrefs.SetString("lokale", "VR lab");
             Debug.Log("Yep " + transcript);
-            
+            SceneManager.LoadScene("roadmap");
+
 
         }
         else if (System.Array.IndexOf(innolab, transcript) != -1)
         {
+            PlayerPrefs.SetString("lokale", "Innolab");
             Debug.Log("Yep " + transcript);
-
-        }
-        else if (System.Array.Exists(tiergang, s=> s == transcript) || System.Array.Exists(lokaletiergang, s => s == transcript))
-        {
-            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
 
         }
         else if (System.Array.IndexOf(proces, transcript) != -1)
         {
+            PlayerPrefs.SetString("lokale", "Proces");
             Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
 
+        }
+        else if (System.Array.IndexOf(teori, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Teori");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(biokemi, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Bio-Kemi");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        }
+        else if (System.Array.IndexOf(fysik, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Fysik - Laboratorium");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        }
+        else if (System.Array.IndexOf(printer, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Printer");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        }else if (System.Array.IndexOf(bibliotek, transcript) != -1)
+        {
+
+            PlayerPrefs.SetString("lokale", "04 - Bibliotek");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        }else if (System.Array.IndexOf(teknologi, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "03 - Teknologi");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        } else if (System.Array.IndexOf(byg, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "07 - Byg");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        } else if (System.Array.IndexOf(musik, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "06 - Musik");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        } else if (System.Array.IndexOf(kantine, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Kantinen - Sydsal");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        } else if (System.Array.IndexOf(nordsal, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "Nordsal");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+        }
+        else if (System.Array.IndexOf(tiergang, transcript) !=-1)
+        {
+            PlayerPrefs.SetString("lokale", "10'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(lokaletiergang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "10'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(tyvergang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "20'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(tredvegang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "30'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(foretilfemgang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "43 - 44 - 45");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(sekstilfalvtreds, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "46 - 47 - 48 - 49 - 50");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        }
+        else if (System.Array.IndexOf(halvtredsgang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "50'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
+
+        } else if (System.Array.IndexOf(tredsgang, transcript) != -1)
+        {
+            PlayerPrefs.SetString("lokale", "60'er gang");
+            Debug.Log("Yep " + transcript);
+            SceneManager.LoadScene("roadmap");
         }
 
 
