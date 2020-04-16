@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using GoogleCloudStreamingSpeechToText;
 
 public class Startmic : MonoBehaviour
@@ -8,26 +10,24 @@ public class Startmic : MonoBehaviour
     public GameObject button;
     public GameObject mic;
     public GameObject Voicerec;
+    GameObject clone;
     public modtagetrans mod;
-    float timer = 10;
-     public void Change()
-    {
+    public GameObject text;
+    float timer = 15;
 
-        Instantiate(mic);
-        mod.stream = Instantiate(Voicerec).GetComponent<StreamingRecognizer>();
+
+    public void Awake()
+    {
+        text.SetActive(false);
+    }
+    public void Change()
+    {
+        clone = Instantiate(Voicerec);
+        mod.stream = clone.GetComponent<StreamingRecognizer>();
         mod.startlistening();
         button.SetActive(false);
-        InvokeRepeating("countdown", 0.0f, 1f);
-        if (timer > 0)
-        {
-            Debug.Log(timer + "i change");
-        }else if(timer == 0)
-        {
-            Debug.Log("done");
-        }
-
-       
-           
+        text.SetActive(true);
+        InvokeRepeating("countdown", 0.0f, 1f);       
         
 
     }
@@ -35,8 +35,7 @@ public class Startmic : MonoBehaviour
     { 
         if (timer == 0)
         {
-            CancelInvoke();
-            button.SetActive(true);
+            SceneManager.LoadScene("SampleScene");
 
         }
         else
@@ -44,5 +43,10 @@ public class Startmic : MonoBehaviour
             timer -= 1;
             Debug.Log(timer);
         }
+    }
+
+    public void manual()
+    {
+        SceneManager.LoadScene("håndvalgt");
     }
 }

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7050179790896758575}
   - component: {fileID: 3147059675331077500}
-  - component: {fileID: 627500225151185567}
+  - component: {fileID: 5521255367001055929}
+  - component: {fileID: 7596318116310845005}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -128,7 +129,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &627500225151185567
+--- !u!114 &5521255367001055929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,3 +157,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _microphoneName: Microphone Array (Realtek(R) Audio)
+--- !u!81 &7596318116310845005
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054529080844820222}
+  m_Enabled: 1

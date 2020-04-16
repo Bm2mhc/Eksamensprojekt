@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/roadmap.unity
+- path: "Assets/Scenes/h\xE5ndvalgt.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
