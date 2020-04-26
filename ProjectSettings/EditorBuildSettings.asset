@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/h\xE5ndvalgt.unity"
     guid: 21aa87d6a62f7484ca49c78247a72405
+  - enabled: 1
+    path: Assets/Scenes/Skema.unity
+    guid: 1c9d2b583f9700f45bbf818aafccdb18
   m_configObjects: {}

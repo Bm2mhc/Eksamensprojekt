@@ -25,13 +25,15 @@ public class searchscript : MonoBehaviour
         if (transcript.Contains("rektor") || transcript.Contains("Rektor") || transcript.Contains("katrine") || transcript.Contains("Katrine"))
         {
             PlayerPrefs.SetString("lokale", "Rektor");
+            PlayerPrefs.SetString("roomid", "15033222473");
             SceneManager.LoadScene("roadmap");
 
 
         }
-        else if (transcript.Contains("studieadministration") || transcript.Contains("studieadministrationen")|| transcript.Contains("Studieadministration") || transcript.Contains("Studieadministrationen"))
+        else if (transcript.Contains("studievejledning") || transcript.Contains("studievejledningen") || transcript.Contains("Studievejledning") || transcript.Contains("Studievejledningen"))
         {
-            PlayerPrefs.SetString("lokale", "Studieadministration");
+            PlayerPrefs.SetString("lokale", "Studievejledningen");
+            PlayerPrefs.SetString("roomid", "15033222472");
             SceneManager.LoadScene("roadmap");
 
 
@@ -39,6 +41,7 @@ public class searchscript : MonoBehaviour
         else if (transcript.Contains("VR") || transcript.Contains("vr") || transcript.Contains("Vr"))
         {
             PlayerPrefs.SetString("lokale", "VR lab");
+            PlayerPrefs.SetString("roomid", "29296243158");
             SceneManager.LoadScene("roadmap");
 
 
@@ -46,36 +49,42 @@ public class searchscript : MonoBehaviour
         else if (transcript.Contains("innolab") || transcript.Contains("inno lab") || transcript.Contains("Innolab") || transcript.Contains("Inno lab"))
         {
             PlayerPrefs.SetString("lokale", "Innolab");
-            Debug.Log("Yep " + transcript);
+            PlayerPrefs.SetString("roomid", "null");
+            PlayerPrefs.SetString("innolab 2", "19804903661");
+            PlayerPrefs.SetString("innolab 3", "15033222475");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("proces") || transcript.Contains("process") || transcript.Contains("74") || transcript.Contains("Proces") || transcript.Contains("Process"))
         {
             PlayerPrefs.SetString("lokale", "Proces");
+            PlayerPrefs.SetString("roomid", "15033222464");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("teori") || transcript.Contains("design") || transcript.Contains("73") || transcript.Contains("Teori") || transcript.Contains("Design") )
         {
             PlayerPrefs.SetString("lokale", "Teori");
-            Debug.Log("Yep " + transcript);
+            PlayerPrefs.SetString("roomid", "15033222465");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("biokemi") || transcript.Contains("kemi") || transcript.Contains("72") || transcript.Contains("Biokemi") || transcript.Contains("Kemi"))
         {
             PlayerPrefs.SetString("lokale", "Bio-Kemi");
+            PlayerPrefs.SetString("roomid", "15033222461");
             SceneManager.LoadScene("roadmap");
         }
         else if (transcript.Contains("fysik") || transcript.Contains("laboratorium") || transcript.Contains("71") || transcript.Contains("Fysik") || transcript.Contains("Laboratorium"))
         {
             PlayerPrefs.SetString("lokale", "Fysik - Laboratorium");
+            PlayerPrefs.SetString("roomid", "15033222462");
             SceneManager.LoadScene("roadmap");
         }
         else if (transcript.Contains("print") || transcript.Contains("printer") || transcript.Contains("printe") || transcript.Contains("printeren") || transcript.Contains("printere") || transcript.Contains("printerne") || transcript.Contains("Print") || transcript.Contains("Printer") || transcript.Contains("Printe") || transcript.Contains("Printeren") || transcript.Contains("Printere") || transcript.Contains("Printerne"))
         {
             PlayerPrefs.SetString("lokale", "Printer");
+            PlayerPrefs.SetString("roomid", "null");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -83,24 +92,28 @@ public class searchscript : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "04 - Bibliotek");
+            PlayerPrefs.SetString("roomid", "19804712904");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("teknologi") || transcript.Contains("Teknologi") || transcript.Contains("03"))
         {
             PlayerPrefs.SetString("lokale", "03 - Teknologi");
+            PlayerPrefs.SetString("roomid", "19804716018");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("byg") || transcript.Contains("Byg") || transcript.Contains("by") || transcript.Contains("07") || transcript.Contains("By"))
         {
             PlayerPrefs.SetString("lokale", "07 - Byg");
+            PlayerPrefs.SetString("roomid", "15033222460");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("musik") || transcript.Contains("musiklokalet") || transcript.Contains("06")|| transcript.Contains("Musik") || transcript.Contains("Musiklokalet"))
         {
             PlayerPrefs.SetString("lokale", "06 - Musik");
+            PlayerPrefs.SetString("roomid", "15033222474");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -108,6 +121,7 @@ public class searchscript : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "Kantinen - Sydsal");
+            PlayerPrefs.SetString("roomid", "15033222469");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -115,13 +129,12 @@ public class searchscript : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "Nordsal");
+            PlayerPrefs.SetString("Nordsal 1", "15033222459");
+            PlayerPrefs.SetString("Nordsal 2", "15033222458");
             SceneManager.LoadScene("roadmap");
 
         }
-        else if (transcript.Contains("lokale") || transcript.Contains("Lokale"))
-        {
-
-            if (transcript.Contains("11") || transcript.Contains("12") || transcript.Contains("13") || transcript.Contains("14") || transcript.Contains("15") || transcript.Contains("16") || transcript.Contains("17") || transcript.Contains("18"))
+           else if (transcript.Contains("11") || transcript.Contains("12") || transcript.Contains("13") || transcript.Contains("14") || transcript.Contains("15") || transcript.Contains("16") || transcript.Contains("17") || transcript.Contains("18"))
             {
 
                 PlayerPrefs.SetString("lokale", "10'er gang");
@@ -169,6 +182,6 @@ public class searchscript : MonoBehaviour
                 SceneManager.LoadScene("roadmap");
 
             }
-        }
+        
     }
 }

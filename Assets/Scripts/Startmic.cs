@@ -22,6 +22,7 @@ public class Startmic : MonoBehaviour
     }
     public void Change()
     {
+        PlayerPrefs.SetString("lokale", "null");
         clone = Instantiate(Voicerec);
         mod.stream = clone.GetComponent<StreamingRecognizer>();
         mod.startlistening();

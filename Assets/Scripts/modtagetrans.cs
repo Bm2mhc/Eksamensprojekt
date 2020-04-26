@@ -16,13 +16,15 @@ public class modtagetrans : MonoBehaviour
         if (transcript.Contains("rektor"))
         {
             PlayerPrefs.SetString("lokale", "Rektor");
+            PlayerPrefs.SetString("roomid", "15033222473");
             SceneManager.LoadScene("roadmap");
 
 
         }
-        else if (transcript.Contains("studieadministration") || transcript.Contains("studieadministrationen"))
+        else if (transcript.Contains("studievejledningen") || transcript.Contains("studievejledning"))
         {
-            PlayerPrefs.SetString("lokale", "Studieadministration");
+            PlayerPrefs.SetString("lokale", "Studievejledningen");
+            PlayerPrefs.SetString("roomid", "15033222472");
             SceneManager.LoadScene("roadmap");
 
 
@@ -30,6 +32,7 @@ public class modtagetrans : MonoBehaviour
         else if (transcript.Contains("VR") || transcript.Contains("vr"))
         {
             PlayerPrefs.SetString("lokale", "VR lab");
+            PlayerPrefs.SetString("roomid", "29296243158");
             SceneManager.LoadScene("roadmap");
 
 
@@ -37,36 +40,42 @@ public class modtagetrans : MonoBehaviour
         else if (transcript.Contains("innolab") || transcript.Contains("inno lab"))
         {
             PlayerPrefs.SetString("lokale", "Innolab");
-            Debug.Log("Yep " + transcript);
+            PlayerPrefs.SetString("roomid", "null");
+            PlayerPrefs.SetString("innolab 2", "19804903661");
+            PlayerPrefs.SetString("innolab 3", "15033222475");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("proces") || transcript.Contains("process") || transcript.Contains("74"))
         {
             PlayerPrefs.SetString("lokale", "Proces");
+            PlayerPrefs.SetString("roomid", "15033222464");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("teori") || transcript.Contains("design") || transcript.Contains("73"))
         {
             PlayerPrefs.SetString("lokale", "Teori");
-            Debug.Log("Yep " + transcript);
+            PlayerPrefs.SetString("roomid", "15033222465");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("biokemi") || transcript.Contains("kemi") || transcript.Contains("72"))
         {
             PlayerPrefs.SetString("lokale", "Bio-Kemi");
+            PlayerPrefs.SetString("roomid", "15033222461");
             SceneManager.LoadScene("roadmap");
         }
         else if (transcript.Contains("fysik") || transcript.Contains("laboratorium") || transcript.Contains("71"))
         {
             PlayerPrefs.SetString("lokale", "Fysik - Laboratorium");
+            PlayerPrefs.SetString("roomid", "15033222462");
             SceneManager.LoadScene("roadmap");
         }
         else if (transcript.Contains("print") || transcript.Contains("printer") || transcript.Contains("printe") || transcript.Contains("printeren") || transcript.Contains("printere") || transcript.Contains("printerne"))
         {
             PlayerPrefs.SetString("lokale", "Printer");
+            PlayerPrefs.SetString("roomid", "null");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -74,24 +83,28 @@ public class modtagetrans : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "04 - Bibliotek");
+            PlayerPrefs.SetString("roomid", "19804712904");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("teknologi") || transcript.Contains("Teknologi") || transcript.Contains("03"))
         {
             PlayerPrefs.SetString("lokale", "03 - Teknologi");
+            PlayerPrefs.SetString("roomid", "19804716018");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("byg") || transcript.Contains("Byg") || transcript.Contains("by") || transcript.Contains("07"))
         {
             PlayerPrefs.SetString("lokale", "07 - Byg");
+            PlayerPrefs.SetString("roomid", "15033222460");
             SceneManager.LoadScene("roadmap");
 
         }
         else if (transcript.Contains("musik") || transcript.Contains("musiklokalet") || transcript.Contains("06"))
         {
             PlayerPrefs.SetString("lokale", "06 - Musik");
+            PlayerPrefs.SetString("roomid", "15033222474");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -99,6 +112,7 @@ public class modtagetrans : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "Kantinen - Sydsal");
+            PlayerPrefs.SetString("roomid", "15033222469");
             SceneManager.LoadScene("roadmap");
 
         }
@@ -106,6 +120,8 @@ public class modtagetrans : MonoBehaviour
         {
 
             PlayerPrefs.SetString("lokale", "Nordsal");
+            PlayerPrefs.SetString("Nordsal 1", "15033222459");
+            PlayerPrefs.SetString("Nordsal 2", "15033222458");
             SceneManager.LoadScene("roadmap");
 
         }
