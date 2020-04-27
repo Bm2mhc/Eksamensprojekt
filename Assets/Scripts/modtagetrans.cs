@@ -13,7 +13,7 @@ public class modtagetrans : MonoBehaviour
 
     void Modtage(string transcript)
     {
-        if (transcript.Contains("rektor"))
+        if (transcript.Contains("rektor") || transcript.Contains("Katrine"))
         {
             PlayerPrefs.SetString("lokale", "Rektor");
             PlayerPrefs.SetString("roomid", "15033222473");
@@ -66,7 +66,7 @@ public class modtagetrans : MonoBehaviour
             PlayerPrefs.SetString("roomid", "15033222461");
             SceneManager.LoadScene("roadmap");
         }
-        else if (transcript.Contains("fysik") || transcript.Contains("laboratorium") || transcript.Contains("71"))
+        else if (transcript.Contains("fysik") || transcript.Contains("laboratorium") || transcript.Contains("71") || transcript.Contains("Geos Hood"))
         {
             PlayerPrefs.SetString("lokale", "Fysik - Laboratorium");
             PlayerPrefs.SetString("roomid", "15033222462");

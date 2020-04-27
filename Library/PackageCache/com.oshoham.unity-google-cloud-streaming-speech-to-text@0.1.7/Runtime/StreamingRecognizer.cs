@@ -292,7 +292,7 @@ namespace GoogleCloudStreamingSpeechToText {
                     Config = new RecognitionConfig() {
                         Encoding = RecognitionConfig.Types.AudioEncoding.Linear16,
                         SampleRateHertz = audioConfiguration.sampleRate,
-                        LanguageCode = "en",
+                        LanguageCode = "da-DK",
                         MaxAlternatives = 1
                     },
                     InterimResults = returnInterimResults,
