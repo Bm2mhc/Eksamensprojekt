@@ -12,10 +12,12 @@ https://drive.google.com/file/d/1OasCa2ggdrD_cwOxWRkSoY6TOy9zvcI-/view?usp=shari
 
 ## API'er
 Dette projekt bruger 2 API'er. Det første er Google Speech to Text. Google Speech to Text er en api skabt af Google som kan bruges til at transcribe ens udtalte sætning om til ord. Vi bruger det til at få den indtalet sætning analyseret og delt op så vi kan finde ud af hvilket lokale brugeren skal hen til. 
+
 *Du kan læse mere her:*
 https://cloud.google.com/speech-to-text/?utm_campaign=emea-emea-all-en-dr-bkws-all-all-trial-e-gcp-1008073&utm_term=KW_google+speech+to+text-NET_g-PLAC_&gclid=Cj0KCQjwhZr1BRCLARIsALjRVQPuhOG2q1gGPnPaMqgrpLcsMb9weEvFAvkSKTLmsOsje1y7HYEvBqsaAtm0EALw_wcB&utm_content=text-ad-none-any-DEV_c-CRE_253515259877-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+%7E+EXA_M%3A1_EMEA_EN_Cloud_ML_Speech+API-KWID_43700053286084142-aud-606988878374%3Akwd-295515021979-userloc_1005098&utm_source=google&utm_medium=cpc&ds_rl=1245734
 
 Det andet api vi bruger er et Lectio API. Lectio er de danske skoleelevers måde at se skema og få information på. Dette Lectio Api vi bruger er skabt af en klasse kammerat. Vi bruger API'et til at finde information om det lokale bruger vil se.
+
 *Du kan læse mere her*
 https://lectioapi.dk/
 
