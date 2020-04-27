@@ -25,28 +25,47 @@ https://lectioapi.dk/
 
 ### Lokaler
 Rektor
+
 Studievejledningen
+
 VR lab
+
 Proces
+
 Teori
+
 Biokemi
+
 Fysik
+
 Bibliotek
+
 Teknologi
+
 Byg
+
 Musik
+
 Kantinen
+
 
 ### Gange
 10'er gang
+
 20'er gang
+
 30'er gang
+
 43-44-45
+
 56-47-48-49-50
+
 50'er gang
+
 60'er gang
 
-### Andeet
+
+### Andet
 Printer
 
 ## Fejl i produktet
